@@ -1,2 +1,0 @@
-print("LOL")
-print("LPLOOAKD")
