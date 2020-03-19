@@ -4,7 +4,6 @@ class Node():
         self.next = None
         self.prev = None
 
-
 def init_the_node(k):
     first = Node()
     to_ret=first
@@ -39,8 +38,8 @@ def insertion_sort(first):
     while curr_slicing.value!=None:
         tmp=first_of_sorted
         #inputting the current_slicing into curr_adding
-        while curr_slicing.value>=tmp.value and #...  
-
+        while curr_slicing.value>=tmp.value and   
+#Code is exe
         curr_slicing=curr_slicing.next
 
 
