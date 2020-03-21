@@ -3,6 +3,7 @@ class Node():
         self.value=value
         self.next=next
 class LinkedList():
+
     def __init__(self,first=None,last=None):
         self.first=first
         self.last=last
@@ -48,20 +49,28 @@ class LinkedList():
             self.last=f
         f.next=s.next
         s.next=f
-        
-
-
-
-
-L=LinkedList()
-L.make_from_array([1,5,7,0])
-L.switch(None,L.first)
-print(L.print_list_as_tab())
-
-
-
-
-
-
-
-
+def switch(prev,l1,l2):
+    prev.next=l2
+    l1.next=l2.next
+    l2.next=l1
+    return l2
+def Bubble_sort(first):
+    length=first._len()
+    wartownik = Node()
+    wartownik.value=0
+    wartownik.next=first
+    tmp=first
+    for _ in range(length-1):
+        tmp = wartownik.next
+        prev=wartownik
+        while tmp.next != None:
+            #print(tmp.next)
+            if tmp.value>tmp.next.value:
+                switch(prev,tmp,tmp.next)
+                prev=prev.next
+            else:
+                prev=prev.next
+                tmp=tmp.next      
+    #Usuwanie wartownika
+    wartownik=wartownik.next
+    return wartownik
