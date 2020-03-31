@@ -7,4 +7,4 @@ def NaiveRecursive(wagi,koszty,i,w):
         if w>=wagi[0]:return koszty[0]
     return max(NaiveRecursive(wagi,koszty,i-1,w),NaiveRecursive(wagi,koszty,i-1,w-wagi[i]+koszty[i]))
 
-print(NaiveRecursive([1,3,5,3,10,6],[5,2,4,1,7,5],5,10))
+print(NaiveRecursive([1,2,4,5,7,10,15],[1,3,5,1,2,3,4],6,5))

@@ -40,13 +40,13 @@ def Bottom_Up_Coint(tab_of_coins,val):
                 tab_f[i]=q
             else:break
         
-    return tab_f
-#print(Bottom_Up_Coint([1,2,5],150))        
+    return tab_f[val]
+print(Bottom_Up_Coint([1,2,5,10,20,50],1500000))        
 
     
     
 
 
-print(Non_Recursive_Coin([1,2,5],[0]*151,150))
+#print(Non_Recursive_Coin([1,2,5,10,20,50],[0]*1500001,1500000))
 print(datetime.now() - start_time)
     
