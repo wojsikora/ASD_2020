@@ -10,5 +10,9 @@ Lista sąsiedstwa: (Pokazuje liste wychodz z kazdego wierzchołku krawedzi)
  """
 
 """ 
-
+Idę BFSem po wszystkich wierzchołkach i:
+    1) Ustawiam 
+    v.out=1 Jak wychodze z tego jako z rodzica
+    v.in=1 Jak wchodze do niego jako do dziecka
+    2) Ide po wszystkich V i sprawdzam czy v.in=v.out=True, jak nie to return False
  """
