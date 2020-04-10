@@ -1,4 +1,6 @@
 #Zdefiniujemy drzewo i jego parametry
+# tab[0] ma zawierać rozmiar
+# ZACZYNAMY OD 1!!
 def parent(i):return i//2
 def left(i): return i*2
 def right(i): return i*2 + 1
