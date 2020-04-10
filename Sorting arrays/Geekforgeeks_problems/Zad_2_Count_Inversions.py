@@ -18,6 +18,6 @@ Explanation: Given array has six inversions:
     A = [1,3,5,7]     B = [2,4,6,8]
     For each step of merge, if A[i]>B[j] then:
         a) count_inv+=(mid-i+1), because all elements from A with index >i would have inversion with B[j] and adding 1 because Merge sorts takes middle into arr A and we need to include this element itself
-        
+        a
 
  """
