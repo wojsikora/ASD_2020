@@ -2,7 +2,10 @@ class Node:
     def __init__(self = None,value = None):
         self.value=value
         self.next = None
-        self.is_empty = value == None
+        if value!=None:
+            self.is_empty=True
+        else:
+            self.is_empty=False
         #self.state = None
     def _out(self):
         new_list=self
@@ -36,9 +39,7 @@ class Node:
         el_to_add=Node()
         el_to_add.value = val
         first.next=el_to_add
-    def _del_all(self):
-        return None
-    def _add_to_beg(self,val):
+    def _add_value_to_beg(self,val):
         tmp=Node(val)
         tmp.value=val
         if self.value!=None:
@@ -98,18 +99,6 @@ def Selection_sort(first):
 
 
     return tab_ret.next
-h = Node()
-h=h._in(4)
-h = Selection_sort(h)
-#usun_el(h.next,h.next.next)
-h._out()
-
-
-
-    
-
-
-
 
 
 def switch(prev,l1,l2):
