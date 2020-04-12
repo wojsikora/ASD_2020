@@ -6,3 +6,12 @@ Given an integer array and a positive integer k, count all distinct pairs with d
 Output: 2
 There are 2 pairs with difference 3, the pairs are {1, 4} and {5, 2} 
   """
+
+
+""" 
+1. Naive all pairs traversing
+2. Sorting the arrays
+3. BST
+4. Hashing
+
+ """
