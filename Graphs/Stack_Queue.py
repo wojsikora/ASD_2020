@@ -61,8 +61,6 @@ class Queue():
         self.tab=tab
         self.first=0
         self.size=0
-    def is_empty(self):
-        return size==0
     def pop(self):
         self.size-=1
         self.first+=1
