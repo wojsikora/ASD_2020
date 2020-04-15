@@ -1,5 +1,5 @@
 class Node():
-    def __init__(self,value=0,next=None):
+    def __init__(self,value=None,next=None):
         self.value=value
         self.next=next
 class LinkedList():
@@ -52,6 +52,11 @@ class LinkedList():
             self.last=f
         f.next=s.next
         s.next=f
+
+
+X=LinkedList()
+X.make_from_array([1,2,3,4,5,6,1])
+
         
 
 
